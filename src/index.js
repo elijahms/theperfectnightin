@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App';
 import 'semantic-ui-css/semantic.min.css'
+import {BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
-  <React.StrictMode>
+    <Router>
     <App />
-  </React.StrictMode>,
+    </Router>,
   document.getElementById('root')
 );
