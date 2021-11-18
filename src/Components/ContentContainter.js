@@ -24,26 +24,26 @@ const ContentContainter = () => {
         fetch("https://api.boardgameatlas.com/api/search?limit=100&username=trentellingsen&client_id=brAYmW2oQo")
         .then((r) => r.json())
         .then((data) => {
-            console.log(data.games);
+            //console.log(data.games);
             setgameGen(data.games)
         })
         fetch(`http://www.omdbapi.com/?i=tt${movieRandom}&type=movie&apikey=319e819e&`)
         .then((r) => r.json())
         .then((data) => {
-            console.log(data);
+            //.log(data);
             setMovieGen(data)
         })
         fetch("https://api.punkapi.com/v2/beers/random")
         .then((r) => r.json())
         .then((data) => {
             setBeerGen(data[0])
-            console.log(data[0]);
+            //console.log(data[0]);
         })
         fetch(`${process.env.REACT_APP_API_URL}/eats`)
         .then((r) => r.json())
         .then((data) => {
             setEatsGen(data)
-            console.log(data);
+            //console.log(data);
         })
     }, [])
     
