@@ -27,7 +27,7 @@ const ContentContainter = () => {
             //console.log(data.games);
             setgameGen(data.games)
         })
-        fetch(`http://www.omdbapi.com/?i=tt${movieRandom}&type=movie&apikey=319e819e&`)
+        fetch(`https://www.omdbapi.com/?i=tt${movieRandom}&type=movie&apikey=319e819e&`)
         .then((r) => r.json())
         .then((data) => {
             //.log(data);
