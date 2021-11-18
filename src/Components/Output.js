@@ -20,9 +20,9 @@ const Output = ({titleDisplay1, titleDisplay2, sucClick}) => {
                 <br />
                 {sucClick && 
                 <div>
-                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                <a style={{color: "#cc2d30"}} href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
                 <br />
-                <a href={`whatsapp://send?text=${`${titleDisplay1} would go well with ${titleDisplay2}. Sit back, relax and enjoy your Night In`}`} data-action="share/whatsapp/share">Whatsapp</a>
+                <a style={{color: "#cc2d30"}} href={`whatsapp://send?text=${`${titleDisplay1} would go well with ${titleDisplay2}. Sit back, relax and enjoy your Night In`}`} data-action="share/whatsapp/share">Whatsapp</a>
                 </div>
                 }
             </Message>

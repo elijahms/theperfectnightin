@@ -60,7 +60,6 @@ const Tiles = () => {
     }
 
     function handleButtonChoices2(cat) {
-        
         if (cat === "Movies") {
             setImageDisplay2(movieGen.Poster)
             setTitleDisplay2(movieGen.Title)
@@ -90,7 +89,6 @@ const Tiles = () => {
     function handleMatch() {
         let firstCatSubmit = firstCat
         let secondCatSubmit = secondCat
-
         if (firstCatSubmit === null || secondCatSubmit === null) {
             return alert("You suck, choose both!")
         } else {
@@ -112,7 +110,11 @@ const Tiles = () => {
                 <TileContent titleDisplay1={titleDisplay1} imageDisplay1={imageDisplay1} desDisplay1={desDisplay1} handleFirstCat={handleFirstCat} sucClick={sucClick} firstCat={firstCat} secondCat={secondCat} />
             </Grid.Column>
             <Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-            {!afterClick ? <Button id="mainbutton" onClick={handleTryAgain} size="massive" > Try Again </Button> : <Button id="secondbutton" onClick={handleMatch} className={gameGen && movieGen && beerGen && drinkGen && eatsGen ? "ui button" : "ui disabled button"} size='massive'>MATCH</Button>}
+                {!afterClick ? 
+                <Button id="mainbutton" onClick={handleTryAgain} size="massive" > Try Again 
+                </Button> : 
+                <Button id="secondbutton" onClick={handleMatch} className={gameGen && movieGen && beerGen && drinkGen && eatsGen ? "ui button" : "ui disabled button"} size='massive'>MATCH
+                </Button>}
             </Grid.Column>
             <Grid.Column style={styleSet}>
                 <SecondTileContent titleDisplay2={titleDisplay2} imageDisplay2={imageDisplay2} desDisplay2={desDisplay2} handleSecondCat={handleSecondCat}sucClick={sucClick} secondCat={secondCat} firstCat={firstCat} />

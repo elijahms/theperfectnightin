@@ -2,7 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import ContentContainter from './ContentContainter';
 import NavBar from './NavBar';
 import HeaderFile from './HeaderFile'
-import AboutUsPage from "./AboutUsPage";
+import AboutMePage from "./AboutMePage";
 import AddNewPage from "./AddNewPage";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
           <AddNewPage />
         </Route>
         <Route exact path="/about">
-          <AboutUsPage />
+          <AboutMePage />
         </Route>
         <Route path="/">
           <ContentContainter />
