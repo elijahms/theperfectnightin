@@ -15,11 +15,11 @@ const TileContent = ({ titleDisplay1, imageDisplay1, desDisplay1, handleFirstCat
                     <Button className={firstCat === "Eats"|| secondCat === "Eats"  ? "ui disabled button" : "ui button" } onClick={handleFirstCat} value="Eats" >🍔</Button>
                 </Button.Group>
                 </Card>}
-                    {sucClick === true  && <Card> <Image style={{maxHeight: "300px", maxWidth: "100%"}} src={imageDisplay1} />
+                    {sucClick === true  && <Card style={{fontSize: "10pt", textAlign: "center"}} > <Image style={{minHeight: "200px", maxWidth: "100%"}} src={imageDisplay1} />
                     <Card.Content>
                     <Card.Header style={{height: "25px"}} >{titleDisplay1}</Card.Header>
                     <Card.Description style={{height: "35px", overflow: "auto"}} >
-                        {desDisplay1}
+                        <select>{desDisplay1}</select>
                     </Card.Description>
                     </Card.Content>
                 </Card>}

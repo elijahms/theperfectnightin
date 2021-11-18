@@ -5,6 +5,7 @@ import SecondTileContent from './SecondTileContent'
 import Output from './Output'
 import { FetchContext } from '../Context/context'
 
+
 const Tiles = () => {
 
     const {movieGen, gameGen, drinkGen, beerGen, eatsGen , sucClick, setSucClick, afterClick, setAfterClick, imageDisplay1, setImageDisplay1, titleDisplay1, setTitleDisplay1, firstCat, setFirstCat, desDisplay1, setDesDisplay1, imageDisplay2, setImageDisplay2, titleDisplay2, setTitleDisplay2, secondCat, setSecondCat, desDisplay2, setDesDisplay2} = useContext(FetchContext)
@@ -15,44 +16,44 @@ const Tiles = () => {
         alignItems: "center"
     }
 
-    const specialButton = {
-    transform: "rotate(-5deg)",
-	display: "block",
-	position: "relative",
-	padding: "1.2em 2em",
-	fontFamily: "MyThirdFont",
-	fontSize: "0.75em",
-	fontWeight: "600",
-	letterSpacing: ".12em",
-	textAlign: "center",
-	textDecoration: "none",
-	textTransform: "uppercase",
-	color: "mintcream",
-	// color: aquamarine
-	background: "crimson",
-	border: "0",
-	borderRadius: ".2em",
-	cursor: "pointer",
-	transition: "all .3s ease-out",
-    "&:hover": {
-		color: "black" },
-	"&:after": {
-		boxSizing: "border-box",
-		position: "absolute",
-		top: ".5em",
-		left: ".5em",
-		content: "",
-		width: "100%",
-		height: "100%",
-		background: "transparent",
-		border: ".2em solid black",
-		borderRadius: ".2em",
-		transition: "all .15s ease-out" },
-	"& hover after": {
-		top: "0",
-		left: "0"}
+    // const specialButton = {
+    // transform: "rotate(-5deg)",
+	// display: "block",
+	// position: "relative",
+	// padding: "1.2em 2em",
+	// fontFamily: "MyThirdFont",
+	// fontSize: "0.75em",
+	// fontWeight: "600",
+	// letterSpacing: ".12em",
+	// textAlign: "center",
+	// textDecoration: "none",
+	// textTransform: "uppercase",
+	// color: "mintcream",
+	// // color: aquamarine
+	// background: "crimson",
+	// border: "0",
+	// borderRadius: ".2em",
+	// cursor: "pointer",
+	// transition: "all .3s ease-out",
+    // "&:hover": {
+	// 	color: "black" },
+	// "&:after": {
+	// 	boxSizing: "border-box",
+	// 	position: "absolute",
+	// 	top: ".5em",
+	// 	left: ".5em",
+	// 	content: "",
+	// 	width: "100%",
+	// 	height: "100%",
+	// 	background: "transparent",
+	// 	border: ".2em solid black",
+	// 	borderRadius: ".2em",
+	// 	transition: "all .15s ease-out" },
+	// "& hover after": {
+	// 	top: "0",
+	// 	left: "0"}
 
-    }
+    // }
 
     //enables the game title to be displayed correctly
     const titleCase = (str) => {
@@ -164,15 +165,7 @@ const Tiles = () => {
                 <TileContent titleDisplay1={titleDisplay1} imageDisplay1={imageDisplay1} desDisplay1={desDisplay1} handleFirstCat={handleFirstCat} sucClick={sucClick} firstCat={firstCat} secondCat={secondCat} />
             </Grid.Column>
             <Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-            {!afterClick ? <Button onClick={handleTryAgain} size="massive" style= {{backgroundColor: "#efe8ad", borderRadius: "100px"}}> Try Again </Button> : <Button style= {specialButton} onClick={handleMatch} className={gameGen && movieGen && beerGen && drinkGen && eatsGen ? "ui button" : "ui disabled button"} size='massive'>MATCH</Button>}
-            {sucClick && <Button size='massive' as='div' labelPosition='right'>
-                <Button color='red'>
-                    <Icon name='heart' />
-                </Button>
-                <Label as='a' basic color='red' pointing='left'>
-                    2,048
-                </Label>
-                </Button>}
+            {!afterClick ? <Button id="mainbutton" onClick={handleTryAgain} size="massive" > Try Again </Button> : <Button id="secondbutton" onClick={handleMatch} className={gameGen && movieGen && beerGen && drinkGen && eatsGen ? "ui button" : "ui disabled button"} size='massive'>MATCH</Button>}
             </Grid.Column>
             <Grid.Column style={styleSet}>
                 <SecondTileContent titleDisplay2={titleDisplay2} imageDisplay2={imageDisplay2} desDisplay2={desDisplay2} handleSecondCat={handleSecondCat}sucClick={sucClick} secondCat={secondCat} firstCat={firstCat} />

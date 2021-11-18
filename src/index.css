@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'MyFont';
-    src: local('MyFont'), url(./The_Juke_Box-FFP.ttf) format('truetype');
-
-  }
 
   @font-face {
       font-family: 'MySecondFont';
@@ -17,6 +12,83 @@
     font-family: 'RemarcleFont';
   src: local('RemarcleFont'), url(./CherryCreamSoda-lBBX.ttf) format('truetype');
 }
-  /* * {
-      font-family: "MyFont" !important;
-  } */
+
+  #secondbutton{
+	transform: rotate(-5deg);
+	display: block;
+	position: relative;
+	padding: 1.2em 2em;
+	font-family: MyThirdFont;
+	font-size: 0.75em;
+	font-weight: 600;
+	letter-spacing: .12em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: mintcream;
+	background: #cc2d30;
+	border: 0;
+	border-radius: .2em;
+	cursor: pointer;
+	transition: all .3s ease-out;
+  }
+	#secondbutton:hover {
+		color: white;
+  }
+  #secondbutton:after {
+		box-sizing: border-box;
+		position: absolute;
+		top: .5em;
+		left: .5em;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		border: .2em solid white;
+		border-radius: .2em;
+		transition: all .15s ease-out;
+  }
+	#secondbutton:hover:after {
+		top: 0;
+		left: 0;
+  }
+
+  #mainbutton{
+    transform: rotate(-5deg);
+    display: block;
+    position: relative;
+    padding: 1.2em 2em;
+    font-family: MyThirdFont;
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: mintcream;
+    background: #cc2d30;
+    border: 0;
+    border-radius: .2em;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    }
+    #mainbutton:hover {
+      color: white;
+    }
+    #mainbutton:after {
+      box-sizing: border-box;
+      position: absolute;
+      top: .5em;
+      left: .5em;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: .2em solid white;
+      border-radius: .2em;
+      transition: all .15s ease-out;
+    }
+    #mainbutton:hover:after {
+      top: 0;
+      left: 0;
+    }

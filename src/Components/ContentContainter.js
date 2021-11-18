@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useEffect, useContext} from 'react'
 import Tiles from './Tiles'
 import { FetchContext } from '../Context/context'
 
@@ -39,7 +39,7 @@ const ContentContainter = () => {
             setBeerGen(data[0])
             console.log(data[0]);
         })
-        fetch("http://localhost:3000/eats")
+        fetch(`${process.env.REACT_APP_API_URL}/eats`)
         .then((r) => r.json())
         .then((data) => {
             setEatsGen(data)

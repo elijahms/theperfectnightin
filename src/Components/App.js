@@ -5,13 +5,9 @@ import HeaderFile from './HeaderFile'
 import AboutUsPage from "./AboutUsPage";
 import AddNewPage from "./AddNewPage";
 
-
-
 function App() {
-
-
   return (
-    <div style={{height: "100vh", background: "linear-gradient(rgba(155,219,193, 1), rgba(155,219,193, 0.7))", fontFamily: "MyThirdFont", fontSize: "20px"}} >
+    <div style={{ minHeight: "102vh", background: "linear-gradient(rgba(155,219,193, 1), rgba(155,219,193, 0.7))", fontFamily: "MyThirdFont", fontSize: "20px"}} >
       <HeaderFile />
       <NavBar />
       <Switch>

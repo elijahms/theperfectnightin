@@ -15,7 +15,7 @@ const SecondTileContent = ({titleDisplay2, imageDisplay2, desDisplay2, handleSec
                     <Button className={firstCat === "Eats"|| secondCat === "Eats"  ? "ui disabled button" : "ui button" } onClick={handleSecondCat} value="Eats" >🍔</Button>
                 </Button.Group>
                 </Card>}
-                    {sucClick === true && <Card> <Image style={{maxHeight: "300px", maxWidth: "100%"}} src={imageDisplay2} />
+                    {sucClick === true && <Card style={{fontSize: "10pt"}}> <Image style={{minHeight: "200px", maxWidth: "100%"}} src={imageDisplay2} />
                     <Card.Content>
                         <Card.Header style={{height: "25px"}} >{titleDisplay2}</Card.Header>
                         <Card.Description style={{height: "35px", overflow: "auto"}} >
