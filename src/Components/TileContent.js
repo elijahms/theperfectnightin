@@ -19,7 +19,7 @@ const TileContent = ({ titleDisplay1, imageDisplay1, desDisplay1, handleFirstCat
                     <Card.Content>
                     <Card.Header style={{height: "25px"}} >{titleDisplay1}</Card.Header>
                     <Card.Description style={{height: "35px", overflow: "auto"}} >
-                        <select>{desDisplay1}</select>
+                        {desDisplay1}
                     </Card.Description>
                     </Card.Content>
                 </Card>}

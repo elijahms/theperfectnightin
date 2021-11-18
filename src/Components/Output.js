@@ -18,11 +18,13 @@ const Output = ({titleDisplay1, titleDisplay2, sucClick}) => {
             <Message style={styleSet}>
                 {!sucClick ? `You're Beautiful! We think you'll enjoy the pairing that we suggest.` : `${titleDisplay1} would go well with ${titleDisplay2}. Sit back, relax and enjoy your Night In`}
                 <br />
-            {sucClick && 
-            <div>
-            <a id={"tweet"} href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
-            </div>
-            }
+                {sucClick && 
+                <div>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                <br />
+                <a href={`whatsapp://send?text=${`${titleDisplay1} would go well with ${titleDisplay2}. Sit back, relax and enjoy your Night In`}`} data-action="share/whatsapp/share">Whatsapp</a>
+                </div>
+                }
             </Message>
     )
 }

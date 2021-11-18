@@ -13,13 +13,13 @@ const AboutUsPage = () => {
 		</Container>
 		<Grid container columns={3}>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}} >
-			<Button >LinkedIn</Button>
+			<Button id="mainbutton" >LinkedIn</Button>
 		</Grid.Column>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-			<Button  >Email</Button>
+			<Button id="mainbutton" >Email</Button>
 		</Grid.Column>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-			<Button  href="https://elijahsilverman.com/">Website</Button>
+			<Button id="mainbutton" href="https://elijahsilverman.com/">Website</Button>
 		</Grid.Column>
 		</Grid>
 	</div>

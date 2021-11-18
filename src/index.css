@@ -1,17 +1,17 @@
 
 @font-face {
       font-family: 'MySecondFont';
-    src: local('MySecondFont'), url(./Gladifilthefte.ttf) format('truetype');
+    src: local('MySecondFont'), url(./Fonts/Gladifilthefte.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'MyThirdFont';
-  src: local('MyThirdFont'), url(./Air_Americana.ttf) format('truetype');
+  src: local('MyThirdFont'), url(./Fonts/Air_Americana.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'RemarcleFont';
-  src: local('RemarcleFont'), url(./CherryCreamSoda-lBBX.ttf) format('truetype');
+  src: local('RemarcleFont'), url(./Fonts/CherryCreamSoda-lBBX.ttf) format('truetype');
 }
 
   #secondbutton{
