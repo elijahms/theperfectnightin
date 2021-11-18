@@ -1,1 +1,22 @@
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./The_Juke_Box-FFP.ttf) format('truetype');
 
+  }
+
+  @font-face {
+      font-family: 'MySecondFont';
+    src: local('MySecondFont'), url(./Gladifilthefte.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'MyThirdFont';
+  src: local('MyThirdFont'), url(./Air_Americana.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'RemarcleFont';
+  src: local('RemarcleFont'), url(./CherryCreamSoda-lBBX.ttf) format('truetype');
+}
+  /* * {
+      font-family: "MyFont" !important;
+  } */
