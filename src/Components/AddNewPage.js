@@ -56,7 +56,7 @@ const AddNewPage = () => {
                     <label style={{color: "#ffffff"}} >Snack Image</label>
                     <input onChange={handleFormUpdate} name="image" placeholder='https://abcdefg.com'/>
                 </Form.Field>
-                <Button id="mainbutton" type='submit'>Submit</Button>
+                <Button type='submit'>Submit</Button>
         </Form>
         </div>
     )

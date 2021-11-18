@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Container, Divider, Button } from 'semantic-ui-react'
+import { Container, Divider} from 'semantic-ui-react'
 const NavBar = () => {
     
     

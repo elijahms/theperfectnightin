@@ -1,5 +1,5 @@
-import React, {useState, useContext} from 'react'
-import { Grid, Button, Icon, Label } from 'semantic-ui-react'
+import React, {useContext} from 'react'
+import { Grid, Button} from 'semantic-ui-react'
 import TileContent from './TileContent'
 import SecondTileContent from './SecondTileContent'
 import Output from './Output'
@@ -15,46 +15,6 @@ const Tiles = () => {
         justifyContent: "center",
         alignItems: "center"
     }
-
-    // const specialButton = {
-    // transform: "rotate(-5deg)",
-	// display: "block",
-	// position: "relative",
-	// padding: "1.2em 2em",
-	// fontFamily: "MyThirdFont",
-	// fontSize: "0.75em",
-	// fontWeight: "600",
-	// letterSpacing: ".12em",
-	// textAlign: "center",
-	// textDecoration: "none",
-	// textTransform: "uppercase",
-	// color: "mintcream",
-	// // color: aquamarine
-	// background: "crimson",
-	// border: "0",
-	// borderRadius: ".2em",
-	// cursor: "pointer",
-	// transition: "all .3s ease-out",
-    // "&:hover": {
-	// 	color: "black" },
-	// "&:after": {
-	// 	boxSizing: "border-box",
-	// 	position: "absolute",
-	// 	top: ".5em",
-	// 	left: ".5em",
-	// 	content: "",
-	// 	width: "100%",
-	// 	height: "100%",
-	// 	background: "transparent",
-	// 	border: ".2em solid black",
-	// 	borderRadius: ".2em",
-	// 	transition: "all .15s ease-out" },
-	// "& hover after": {
-	// 	top: "0",
-	// 	left: "0"}
-
-    // }
-
     //enables the game title to be displayed correctly
     const titleCase = (str) => {
         let splitStr = str.split(' ');
@@ -63,19 +23,6 @@ const Tiles = () => {
         }
         return splitStr.join(' '); 
      }
-     
-    // state for displaying the card
-    // const [sucClick, setSucClick] = useState(false)
-    // const [afterClick, setAfterClick] = useState(true)
-    // const [imageDisplay1, setImageDisplay1] = useState('https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png')
-    // const [titleDisplay1, setTitleDisplay1] = useState('Choose Wisely...')
-    // const [firstCat, setFirstCat] = useState(null)
-    // const [desDisplay1, setDesDisplay1] = useState("enjoy you night")
-    // const [imageDisplay2, setImageDisplay2] = useState('https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png')
-    // const [titleDisplay2, setTitleDisplay2] = useState('Choose Wisely...')
-    // const [secondCat, setSecondCat] = useState(null)
-    // const [desDisplay2, setDesDisplay2] = useState("enjoy you night")
-
 
     function handleFirstCat(e) {
         setFirstCat(e.target.value)

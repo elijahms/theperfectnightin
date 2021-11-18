@@ -1,5 +1,5 @@
 
-  @font-face {
+@font-face {
       font-family: 'MySecondFont';
     src: local('MySecondFont'), url(./Gladifilthefte.ttf) format('truetype');
 }
@@ -8,6 +8,7 @@
     font-family: 'MyThirdFont';
   src: local('MyThirdFont'), url(./Air_Americana.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'RemarcleFont';
   src: local('RemarcleFont'), url(./CherryCreamSoda-lBBX.ttf) format('truetype');

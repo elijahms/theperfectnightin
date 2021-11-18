@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image, Button, Icon} from 'semantic-ui-react'
+import { Card, Image, Button} from 'semantic-ui-react'
 
 const TileContent = ({ titleDisplay1, imageDisplay1, desDisplay1, handleFirstCat, sucClick, firstCat, secondCat}) => {
     

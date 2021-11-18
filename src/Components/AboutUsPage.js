@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Header, Message, Button, Grid } from 'semantic-ui-react'
+import { Container, Message, Button, Grid } from 'semantic-ui-react'
 
 const AboutUsPage = () => {
 	
@@ -13,13 +13,13 @@ const AboutUsPage = () => {
 		</Container>
 		<Grid container columns={3}>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}} >
-			<Button id="mainbutton">LinkedIn</Button>
+			<Button >LinkedIn</Button>
 		</Grid.Column>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-			<Button id="mainbutton" >Email</Button>
+			<Button  >Email</Button>
 		</Grid.Column>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-			<Button id="mainbutton" href="https://elijahsilverman.com/">Website</Button>
+			<Button  href="https://elijahsilverman.com/">Website</Button>
 		</Grid.Column>
 		</Grid>
 	</div>

@@ -39,7 +39,7 @@ const ContentContainter = () => {
             setBeerGen(data[0])
             console.log(data[0]);
         })
-        fetch(`${process.env.REACT_APP_API_URL}/eats`)
+        fetch(`https://my-phase-2-backend-elijah.herokuapp.com/eats`)
         .then((r) => r.json())
         .then((data) => {
             setEatsGen(data)
