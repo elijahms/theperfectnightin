@@ -11,7 +11,7 @@ const Tiles = () => {
     const {movieGen, gameGen, drinkGen, beerGen, eatsGen , sucClick, setSucClick, afterClick, setAfterClick, imageDisplay1, setImageDisplay1, titleDisplay1, setTitleDisplay1, firstCat, setFirstCat, desDisplay1, setDesDisplay1, imageDisplay2, setImageDisplay2, titleDisplay2, setTitleDisplay2, secondCat, setSecondCat, desDisplay2, setDesDisplay2} = useContext(FetchContext)
     
     const styleSet = {
-        display: "flex",
+        display: "inline-grid",
         justifyContent: "center",
         alignItems: "center"
     }

@@ -4,6 +4,8 @@ import { Container, Message, Button, Grid } from 'semantic-ui-react'
 const AboutMePage = () => {
 	
 	const styleSet = {textAlign: "center", fontSize: "20px", backgroundColor: 		"#e8a5af", color: "#ffffff", justifyContent: "center", alignItems: "center",}
+
+
 	
 	return (
 	<div>
@@ -13,13 +15,13 @@ const AboutMePage = () => {
 		</Container>
 		<Grid container columns={3}>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}} >
-			<Button id="mainbutton" href="https://www.linkedin.com/in/elijah-silverman-917a91a5/" >LinkedIn</Button>
+			<Button id="mainbutton" onClick={() => window.open("https://www.linkedin.com/in/elijah-silverman-917a91a5/", '_blank').focus()} >LinkedIn</Button>
 		</Grid.Column>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 			<Button id="mainbutton" href="mailto:elijahmsilverman@gmail.com" >Email</Button>
 		</Grid.Column>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-			<Button id="mainbutton" href="https://elijahsilverman.com/">Website</Button>
+			<Button onClick={() => window.open("https://elijahsilverman.com", '_blank').focus()} id="mainbutton" >Website</Button>
 		</Grid.Column>
 		</Grid>
 	</div>
