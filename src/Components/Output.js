@@ -16,13 +16,13 @@ const Output = ({titleDisplay1, titleDisplay2, sucClick}) => {
     
     return (
             <Message style={styleSet}>
-                {!sucClick ? `You're Beautiful! We think you'll enjoy the pairing that we suggest.` : `${titleDisplay1} would go well with ${titleDisplay2}. Sit back, relax and enjoy your Night In`}
+                {!sucClick ? `You're Beautiful! We think you'll enjoy the pairing that we suggest.` : <span> <span style={{color: "#cc2d30"}} >{titleDisplay1}</span> would go well with <span style={{color: "#cc2d30"}} >{titleDisplay2}</span> . Sit back, relax and enjoy your Night In </span>}
                 <br />
                 {sucClick && 
                 <div>
-                <a style={{color: "#cc2d30"}} href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+                <a style={{color: "#1DA1F2"}}  href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
                 <br />
-                <a style={{color: "#cc2d30"}} href={`whatsapp://send?text=${`${titleDisplay1} would go well with ${titleDisplay2}. Sit back, relax and enjoy your Night In`}`} data-action="share/whatsapp/share">Whatsapp</a>
+                <a style={{color: "#25D366"}} href={`whatsapp://send?text=${`${titleDisplay1} would go well with ${titleDisplay2}. Sit back, relax and enjoy your Night In`}`} data-action="share/whatsapp/share">Whatsapp</a>
                 </div>
                 }
             </Message>

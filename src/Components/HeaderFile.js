@@ -8,7 +8,7 @@ const HeaderFile = () => {
         paddingBottom: "1%",
         textAlign: "center",
         fontSize: "10vw",
-        letterSpacing: "10px",
+        letterSpacing: "0.15em",
         color: "#cc2d30",
         //backgroundColor: "#e8a5af",
         background: "linear-gradient(#e8a5af, rgba(155,219,193, 0.4)",

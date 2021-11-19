@@ -13,7 +13,7 @@ const AboutMePage = () => {
 		<Message style= {styleSet} floating>Hi, Elijah here - I'm a budding software engineer and would love to connect with you!
         </Message>
 		</Container>
-		<Grid container columns={3}>
+		<Grid container columns={3} stackable>
 		<Grid.Column style={{display: "flex", justifyContent: "center", alignItems: "center"}} >
 			<Button id="mainbutton" onClick={() => window.open("https://www.linkedin.com/in/elijah-silverman-917a91a5/", '_blank').focus()} >LinkedIn</Button>
 		</Grid.Column>

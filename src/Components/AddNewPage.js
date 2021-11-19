@@ -12,8 +12,7 @@ const AddNewPage = () => {
         textAlign: "center",
         backgroundColor: "#e8a5af",
         borderRadius: "30px",
-        boxShadow: "10px 10px #ffffff",
-        paddingBotton: "3%"
+        boxShadow: "10px 10px #ffffff"
     }
 
     const [form, setForm] = useState({
@@ -43,7 +42,7 @@ const AddNewPage = () => {
     }
     
     return (
-        <div>
+        <div >
         <Container style={{padding: "5%"}} >
         <Message style= {{textAlign: "center", fontSize: "20px", backgroundColor: "#e8a5af", color: "#ffffff"}} floating>We wanted to provide a way for you to add some more "Eats" in case you were craving something and you didn't see it!
         </Message>
