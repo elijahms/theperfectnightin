@@ -12,7 +12,8 @@ const AddNewPage = () => {
         textAlign: "center",
         backgroundColor: "#e8a5af",
         borderRadius: "30px",
-        boxShadow: "10px 10px #ffffff"
+        boxShadow: "10px 10px #ffffff",
+        paddingBotton: "3%"
     }
 
     const [form, setForm] = useState({

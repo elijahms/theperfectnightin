@@ -105,7 +105,7 @@ const Tiles = () => {
     
     return (
         <div>
-            <Grid container columns={3}>
+            <Grid container columns={3} stackable >
             <Grid.Column style={styleSet}>
                 <TileContent titleDisplay1={titleDisplay1} imageDisplay1={imageDisplay1} desDisplay1={desDisplay1} handleFirstCat={handleFirstCat} sucClick={sucClick} firstCat={firstCat} secondCat={secondCat} />
             </Grid.Column>

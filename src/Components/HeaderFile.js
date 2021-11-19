@@ -7,7 +7,7 @@ const HeaderFile = () => {
         paddingTop: "3%",
         paddingBottom: "1%",
         textAlign: "center",
-        fontSize: "12vw",
+        fontSize: "10vw",
         letterSpacing: "10px",
         color: "#cc2d30",
         //backgroundColor: "#e8a5af",
@@ -19,7 +19,7 @@ const HeaderFile = () => {
     return (
         <div>
         <Header style={styleSet} >MATCH IT</Header>
-        <h2 style={{fontSize: "4vw", textAlign: "center", paddingBottom: "3%", color: "#cc2d30", fontFamily: "MyThirdFont"}} >A Perfect Night Starts With A Perfect MATCH</h2>
+        <h2 style={{fontSize: "3vw", textAlign: "center", paddingBottom: "3%", color: "#cc2d30", fontFamily: "MyThirdFont"}} >A Perfect Night Starts With A Perfect MATCH</h2>
         </div>
     )
 }

@@ -93,3 +93,10 @@
       top: 0;
       left: 0;
     }
+
+
+    #gridcontainer {
+
+      grid-template-columns: repeat(3, 1fr);
+
+    }
